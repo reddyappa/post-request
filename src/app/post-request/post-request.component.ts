@@ -14,15 +14,15 @@ postId3;
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post<any>('https://reqres.in/api/posts',{title: 'Angular POST Request Example'})
+    this.http.post<any>('https://reqres.in/api/posts',{title: 'Angular POST Request Example reddeppa'})
     .subscribe(data=>{this.postId = data.id;})
 
     this.http.post<any>('https://reqres.in/api/posts', { title: 'Angular POST Request Example' }).subscribe(data => {
       this.postId2 = data.id;
   })
 
-  const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar' };
-  const body = { title: 'Angular POST Request Example' };
+  const headers = { 'Authorization': 'Bearer my-token reeddeees', 'My-Custom-Header': 'foobar' };
+  const body = { title: 'Angular POST Request Example 444s' };
   this.http.post<any>('https://reqres.in/api/posts', body, { headers }).subscribe(data => {
       this.postId3 = data.id;
   });
