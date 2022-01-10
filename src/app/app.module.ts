@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostRequestComponent } from './post-request/post-request.component';
 import {HttpClientModule} from "@angular/common/http";
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostRequestComponent
+    PostRequestComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
